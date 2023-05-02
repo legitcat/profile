@@ -1,5 +1,260 @@
+<!DOCTYPE html>
 <html>
-  
-  <h1>Testing</h1>
+<head>
+  <!-- Site made with Mobirise Website Builder v5.8.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.8.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <meta name="description" content="">
+
+  <title>Sam Profile</title>
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script src="./assets/bootstrap/js/bootstrap.min.js"> </script> 
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+
  
+   <script type="text/javascript">
+                 
+	function sendEmail() {
+
+               var email = document.getElementById("email").value;
+               var comments = "Email via smtpjs.com SSL.<br/><a href='{accountaddress}'>Account Address</a><br/><a href='{unsubscribe}'>Unsubscribe</a>" + document.getElementById("comments").value;
+
+               //alert(email + " ' " + comments);
+
+               Email.send({
+                   SecureToken : "f94ca249-c7a4-48d0-b1e8-034d31478300",
+                   To : 'paulvalladares@gmail.com',
+                   From : email,
+                   Subject : "Email test via smtpjs.com SSL",
+ 	           Body : comments,
+               }).then(
+                   message => alert("Email test via smtpjs.com SSL ok")
+               );
+	}
+
+   </script> 
+  
+  
+</head>
+
+<body style="font-family:Arial">
+  
+<section data-bs-version="5.1" class="menu cid-tBTUPplowZ" >
+
+  
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" d data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </div>
+        </button>
+
+
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  nav-right" data-app-modern-menu="true">
+                    <li>
+                        <a class="nav-link  text-black display-6" data-bs-toggle="modal" data-bs-target="#AboutModal" href="#">
+                            About Me &nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>                            
+                    </li>
+                    <li>
+                        <a class="nav-link link text-black display-6" data-bs-toggle="modal" data-bs-target="#ContactModal" href="#">
+                            Contact &nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="#" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<section>
+
+      <!-- Modal About -->
+      <div class="modal fade" id="AboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">About</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              I am Sam, Sam I am. Technology excites me and I am looking forward to use my skills to help an orginazation keep it's data and IT infructure safe.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal Contact -->
+      <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               Telephone : 310-333-4444 <br/>
+               Email : samIam@gmail.com
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<table>
+   <th>
+     <td rowspac="2"><img src="./assets/images/background11.jpg"></td>
+     <td></td>
+   </td>
+   <th>
+     <td>            
+           <div class="col-12 col-lg-12">
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-3" style="font-weight:700">Tuned</h1>
+                
+                <p class="mbr-text mbr-fonts-style display-7">to analyze, plan and tackle cyber risks head on</p>
+                
+            </div>
+     </td>
+     <td></td>
+   </td>
+
+</table>
+
+<section>
+
+    <!--Accordian css-->
+    <div class="m-4">
+        <div class="accordionmbr-text mbr-fonts-style display-7" id="myAccordion" style="color:black">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        <label style="font-size:20px;color:black"><b>Experiences</b></label>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                       <p>+ Operating Systems : Windows and Linux</p>   
+                       <p>+ Cyber Security Tools : Whiteshark</p>     
+                       <p>+ Programming : Phyton, Javascript, CSS,  HTML , Jquery</p>
+                       <p>+ Databases : Microsoft SQL Server, MySql, Microsoft Access, SQL Lite</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        <label style="font-size:20px;color:black"><b>Education</b></label>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                       <p>+ College : De Paul Univerity, Chicago</p>   
+                       <p>+ Major : Bachelor degree in computer science majoring in cyber security</p>     
+                       <p>+ Programming : Phyton, Javascript, CSS,  HTML , Jquery</p>
+                       <p>+ High School : Torrance West High, Torrance, California</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<section data-bs-version="5.1" class="social1 cid-tCybC4Wt8K" id="share1-5">
+    
+    
+
+    <!--Email comments-->  
+    <table width="100%" style="text-align:center">
+         <th>
+           <td>
+
+	      <form method="post">
+                  <label style="font-size:16px">Email</label>
+                  <input id="email" name="email" type="text" maxlength="100" style="width:300px" placeholder="mymail@mail.com"></input><br/>
+                  <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Comments"></textarea>
+                  <br/><input type="button" value="Send Email" onclick="sendEmail()"/>
+	      </form>  
+
+            </td>
+         </th>
+
+    </table>
+
+    <br/><br/>    
+    
+
+  <section data-bs-version="5.1" class="social1 cid-tCEh96430P" id="share1-a">
+
+    <div class="container" style="text-align:center">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title mb-3 align-center mbr-fonts-style display-2">
+                    <strong>Contact Me @</strong>
+                </h3>
+                <div>
+                    <div class="mbr-social-likes align-center">
+                        <span class="btn btn-social socicon-bg-facebook facebook m-2">
+                            <i class="socicon socicon-facebook"></i>
+                        </span>
+                        <span class="btn btn-social twitter socicon-bg-twitter m-2">
+                            <i class="socicon socicon-twitter"></i>
+                        </span>
+                        <span class="btn btn-social mailru socicon-bg-mail m-2">
+                            <i class="socicon socicon-mail"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+</body>
 </html>

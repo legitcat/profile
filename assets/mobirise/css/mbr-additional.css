@@ -1,0 +1,281 @@
+body {
+  font-family: Jost;
+}
+
+.cid-tBTUPplowZ .navbar {
+  min-height: 70px;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.cid-tBTUPplowZ .navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  border-top: 0.35em solid;
+  border-right: 0.35em solid transparent;
+  border-left: 0.35em solid transparent;
+  border-bottom: 0;
+  top: 41%;
+}
+
+.cid-tBTUPplowZ .navbar.collapsed ul.navbar-nav li {
+  margin: auto;
+}
+
+.cid-tBTUPplowZ .navbar .navbar-collapse {
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.cid-tBTUPplowZ .iconfont-wrapper {
+  color: #000000 !important;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+@media (max-width: 991px) {
+  .cid-tBTUPplowZ .navbar .nav-item .nav-link::before {
+    display: none;
+  }
+  .cid-tBTUPplowZ .navbar.opened .dropdown-menu {
+    top: 0;
+  }
+  .cid-tBTUPplowZ .navbar .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .cid-tBTUPplowZ .navbar .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+
+}
+
+/*-------------------------------------------------------------------------*/
+
+@media (max-width: 991px) and (max-width: 767px) {
+  .cid-tBTUPplowZ .navbar .navbar-brand {
+    width: calc(100% - 31px);
+  }
+}
+
+/*-------------------------------------------------------------------------*/
+
+.cid-tBTUPplowZ .navbar.navbar-short {
+  min-height: 60px;
+}
+.cid-tBTUPplowZ .navbar.navbar-short .navbar-logo img {
+  height: 2.5rem !important;
+}
+.cid-tBTUPplowZ .navbar.navbar-short .navbar-brand {
+  min-height: 60px;
+  padding: 0;
+}
+.cid-tBTUPplowZ .navbar-brand {
+  min-height: 70px;
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 0;
+  padding: 10px 0;
+  transition: all 0.3s;
+  word-break: break-word;
+  z-index: 1;
+}
+
+.cid-tBTUPplowZ .navbar-brand .navbar-caption {
+  line-height: inherit !important;
+}
+.cid-tBTUPplowZ .navbar-brand .navbar-logo a {
+  outline: none;
+}
+.cid-tBTUPplowZ .dropdown-item.active,
+.cid-tBTUPplowZ .dropdown-item:active {
+  background-color: transparent;
+}
+
+.cid-tBTUPplowZ .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+.cid-tBTUPplowZ .nav-dropdown .link.dropdown-toggle {
+  margin-right: 1.667em;
+}
+.cid-tBTUPplowZ .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+  margin-right: 0;
+  padding: 0.667em 1.667em;
+}
+.cid-tBTUPplowZ .navbar.navbar-expand-lg .dropdown .dropdown-menu {
+  background: #ffffff;
+}
+.cid-tBTUPplowZ .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+  margin: 0;
+  left: 100%;
+}
+.cid-tBTUPplowZ .navbar .dropdown.open > .dropdown-menu {
+  display: block;
+}
+.cid-tBTUPplowZ ul.navbar-nav {
+  flex-wrap: wrap;
+}
+.cid-tBTUPplowZ .navbar-buttons {
+  text-align: center;
+  min-width: 170px;
+}
+.cid-tBTUPplowZ button.navbar-toggler {
+  outline: none;
+  width: 31px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  align-self: center;
+}
+.cid-tBTUPplowZ button.navbar-toggler .hamburger span {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 2px;
+  border-right: 5px;
+  background-color: #000000;
+}
+.cid-tBTUPplowZ button.navbar-toggler .hamburger span:nth-child(1) {
+  top: 0;
+  transition: all 0.2s;
+}
+.cid-tBTUPplowZ button.navbar-toggler .hamburger span:nth-child(2) {
+  top: 8px;
+  transition: all 0.15s;
+}
+.cid-tBTUPplowZ button.navbar-toggler .hamburger span:nth-child(3) {
+  top: 8px;
+  transition: all 0.15s;
+}
+.cid-tBTUPplowZ button.navbar-toggler .hamburger span:nth-child(4) {
+  top: 16px;
+  transition: all 0.2s;
+}
+.cid-tBTUPplowZ nav.opened .hamburger span:nth-child(1) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all 0.2s;
+}
+.cid-tBTUPplowZ nav.opened .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  transition: all 0.25s;
+}
+.cid-tBTUPplowZ nav.opened .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: all 0.25s;
+}
+.cid-tBTUPplowZ nav.opened .hamburger span:nth-child(4) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all 0.2s;
+}
+.cid-tBTUPplowZ .navbar-dropdown {
+  padding: 0 1rem;
+  position: fixed;
+}
+.cid-tBTUPplowZ a.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cid-tBTUPplowZ .icons-menu {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.3rem;
+  text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cid-tBTUPplowZ .navbar {
+    height: 70px;
+  }
+  .cid-tBTUPplowZ .navbar.opened {
+    height: auto;
+  }
+  .cid-tBTUPplowZ .nav-item .nav-link:hover::before {
+    width: 175%;
+    max-width: calc(100% + 2rem);
+    left: -1rem;
+  }
+}
+
+
+.cid-tCybC4Wt8K .socicon-bg-facebook {
+  background: #1778f2;
+  color: #ffffff;
+}
+.cid-tCybC4Wt8K .socicon-bg-facebook:hover {
+  background: #0b60cb;
+}
+.cid-tCybC4Wt8K .socicon-bg-twitter {
+  background: #1da1f2;
+  color: #ffffff;
+}
+.cid-tCybC4Wt8K .socicon-bg-twitter:hover {
+  background: #0c85d0;
+}
+.cid-tCybC4Wt8K .socicon-bg-vkontakte {
+  background: #4680C2;
+  color: #ffffff;
+}
+.cid-tCybC4Wt8K .socicon-bg-vkontakte:hover {
+  background: #3567a0;
+}
+.cid-tCybC4Wt8K .socicon-bg-odnoklassniki {
+  background: #ee8208;
+  color: #ffffff;
+}
+.cid-tCybC4Wt8K .socicon-bg-odnoklassniki:hover {
+  background: #bd6706;
+}
+.cid-tCybC4Wt8K .socicon-bg-pinterest {
+  background: #e60023;
+  color: #ffffff;
+}
+.cid-tCybC4Wt8K .socicon-bg-pinterest:hover {
+  background: #b3001b;
+}
+.cid-tCybC4Wt8K .socicon-bg-mail {
+  background: #005ff9;
+  color: #ffffff;
+}
+.cid-tCybC4Wt8K .socicon-bg-mail:hover {
+  background: #004cc6;
+}
+.cid-tCybC4Wt8K .btn-social {
+  font-size: 32px;
+  border-radius: 50%;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none !important;
+}
+.cid-tCybC4Wt8K .btn-social i {
+  top: 0;
+  line-height: 55px;
+  width: 55px;
+}
+
+.cid-tCybC4Wt8K [class^="socicon-"]:before,
+.cid-tCybC4Wt8K [class*=" socicon-"]:before {
+  line-height: 55px;
+}
