@@ -28,14 +28,15 @@
 	function sendEmail() {
 
                var email = document.getElementById("email").value;
-               var comments = document.getElementById("comments").value + "<br/><br/>Email via smtpjs.com SSL.<br/><a href='{accountaddress}'>Account Address</a><br/><a href='{unsubscribe}'>Unsubscribe</a>";
-
+               var message = document.getElementById("comments").value;
+               var comments = email + " message : <br/>" + message + "<br/><br/>Email via smtpjs.com SSL.<br/><a href='{accountaddress}'>Account Address</a><br/><a href='{unsubscribe}'>Unsubscribe</a>";
+               
                //alert(email + " ' " + comments);
 
                Email.send({
                    SecureToken : "f94ca249-c7a4-48d0-b1e8-034d31478300",
                    To : 'paulvalladares@gmail.com',
-                   From : email,
+                   From : paulvalladares@gmail.com,
                    Subject : "Email test via smtpjs.com SSL",
  	           Body : comments,
                }).then(
