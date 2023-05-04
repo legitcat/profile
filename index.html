@@ -30,13 +30,13 @@
                var email = document.getElementById("email").value; //sender email
                var message = document.getElementById("comments").value;
                var comments = email + " message : <br/>" + message + "<br/><br/>Email via smtpjs.com SSL.<br/><a href='{accountaddress}'>Account Address</a><br/><a href='{unsubscribe}'>Unsubscribe</a>";
-               
+               vay myemail = 'paulvalladares@gmail.com';
                //alert(email + " ' " + comments);
 
                Email.send({
                    SecureToken : "f94ca249-c7a4-48d0-b1e8-034d31478300", // token from Elastic site
-                   To : 'paulvalladares@gmail.com',
-                   From : 'paulvalladares@gmail.com', // registered @ Elastic server
+                   To : myemail,
+                   From : myemail, // registered @ Elastic server
                    Subject : "Email from " + email,
  	           Body : comments,
                }).then(
