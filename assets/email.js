@@ -1,18 +1,18 @@
-function validateemail(){
-	
-	if (documnent.getElementById("robot").checked != true){		
-		documment.getElementById("lblmsg").value="Must check I'm not a robot check box";		
-	}
-	else if (documnent.getElementById("email").value == ''){		
-		documment.getElementById("lblmsg").value="Enter email address";		
+function validateemail(){	
+
+	if (document.getElementById("email").value.trim() == ''){		
+	    document.getElementById("lblmsg").innerHTML ="Enter email address";		
 	}	
-	else if (documnent.getElementById("comment").value == ''){		
-		documment.getElementById("lblmsg").value="Enter a message";		
+	else if (document.getElementById("comments").value == ''){		
+	    document.getElementById("lblmsg").innerHTML ="Enter a message";		
+	}
+	else if (document.getElementById("robot").checked == false){		
+	    document.getElementById("lblmsg").innerHTML ="Must check I'm not a robot checkbox";		
 	}	
 	else {
 	   sendEmail();
-	}
-	
+	}	
+
 }	
 
 
