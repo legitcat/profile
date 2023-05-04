@@ -1,4 +1,16 @@
-	function sendEmail() {
+function validateemail(){
+	
+	if (documnent.getElementById("robot").checked != true){		
+		documment.getElementById("lblmsg").value="Must check I'm not a robot check box";		
+	}
+	else {
+	   sendEmail();
+	}
+	
+}	
+
+
+function sendEmail() {
 
                var email = document.getElementById("email").value; //sender email
                var message = document.getElementById("comments").value;
