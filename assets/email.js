@@ -3,6 +3,12 @@ function validateemail(){
 	if (documnent.getElementById("robot").checked != true){		
 		documment.getElementById("lblmsg").value="Must check I'm not a robot check box";		
 	}
+	else if (documnent.getElementById("email").value == ''){		
+		documment.getElementById("lblmsg").value="Enter email address";		
+	}	
+	else if (documnent.getElementById("comment").value == ''){		
+		documment.getElementById("lblmsg").value="Enter a message";		
+	}	
 	else {
 	   sendEmail();
 	}
