@@ -31,6 +31,8 @@ function sendEmail() {
                    Subject : "Email from " + email,
  	           Body : comments,
                }).then(
+		   //document.getElementById("lblmsg").innerHTML ="Thank you";
+                   //document.getElementById("button1").disabled = false;
                    message => alert("Email test via smtpjs.com SSL ok")
                );
 	}
