@@ -8,22 +8,24 @@ function validateemail(){
         if (email.match(validRegex)) {
             //alert('email good');
         } else {
-             document.form1.email.focus();
-	     document.getElementById("lblmsg").innerHTML ="Invalid email address";	
+             //document.form1.email.focus();
+             document.getElementById("lblmsg").innerHTML ="Invalid email address";
+             document.getElementById("email").focus();
              return false;
         }
 
 
         if (document.getElementById("email").value.trim() == ''){		
-	    document.getElementById("lblmsg").innerHTML ="Enter email address";		
+	    document.getElementById("lblmsg").innerHTML ="Enter email address";	
+            document.getElementById("email").focus();	
 	}
         else if (document.getElementById("comments").value == ''){		
-	    document.getElementById("lblmsg").innerHTML ="Enter a message";		
+	    document.getElementById("lblmsg").innerHTML ="Enter a message";	
+            document.getElementById("comments").focus();		
 	}
 	else if (document.getElementById("robot").checked == false){		
-	    document.getElementById("lblmsg").innerHTML ="Must check I'm not a robot checkbox";		
-	}
-        //alert("success!");	
+	    document.getElementById("lblmsg").innerHTML ="Must check I'm not a robot checkbox";
+	}		
 	else {
 	   sendEmail();
 	}	
