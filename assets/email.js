@@ -48,7 +48,7 @@ function sendEmail() {
                    Subject : "Email from " + email,
  	           Body : comments,
                }).then(
-                   //message => alert("Email test via smtpjs.com SSL ok")
-		   message => document.getElementById("lblmsg").innerHTML ="Message sent, thank you"
+		   message => document.getElementById("lblmsg").innerHTML ="Message sent, thank you",
+		   document.getElementById("button1").disabled= true
                );
 	}
