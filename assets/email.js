@@ -1,14 +1,29 @@
 function validateemail(){	
 
-	if (document.getElementById("email").value.trim() == ''){		
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var email = document.getElementById("email").value.trim();
+
+        //alert(email);
+
+        if (email.match(validRegex)) {
+            //alert('email good');
+        } else {
+             alert("Invalid email address!");
+             document.form1.email.focus();
+             return false;
+        }
+
+
+        if (document.getElementById("email").value.trim() == ''){		
 	    document.getElementById("lblmsg").innerHTML ="Enter email address";		
-	}	
-	else if (document.getElementById("comments").value == ''){		
+	}
+        else if (document.getElementById("comments").value == ''){		
 	    document.getElementById("lblmsg").innerHTML ="Enter a message";		
 	}
 	else if (document.getElementById("robot").checked == false){		
 	    document.getElementById("lblmsg").innerHTML ="Must check I'm not a robot checkbox";		
-	}	
+	}
+        //alert("success!");	
 	else {
 	   sendEmail();
 	}	
