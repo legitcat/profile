@@ -8,8 +8,8 @@ function validateemail(){
         if (email.match(validRegex)) {
             //alert('email good');
         } else {
-             alert("Invalid email address!");
              document.form1.email.focus();
+	     document.getElementById("lblmsg").innerHTML ="Invalid email address";	
              return false;
         }
 
