@@ -191,14 +191,14 @@
          <th>
            <td>
 
-	      <form onsubmit="validateemail()">
-                  <label style="font-size:16px">Email</label>
-                  <input id="email" type="email" size="32" required></input><br/>
-                  <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Message"></textarea><br/>
-		  <input id="robot" name="robot" type="checkbox">&nbsp;I'm not a robot</input><br/>
-                  <input type="submit" value="Send Email"/><br/>
-		  <label id="lblmsg"></label>
-	      </form>  
+		<form id="form1">
+		      <label style="font-size:16px">Email</label>
+		      <input id="email" type="email" size="32" required></input><br/>
+		      <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Message"></textarea><br/>
+		      <input id="robot" name="robot" type="checkbox">&nbsp;I'm not a robot</input><br/>
+		      <input type="button" onclick="validateemail()" value="Send Email"/><br/>
+		      <label id="lblmsg"></label>
+		</form>   
 
             </td>
          </th>
