@@ -15,7 +15,7 @@ function validateemail(){
         }
 
 
-        if (document.getElementById("email").value.trim() == ''){		
+        if (document.getElementById("email").value == ''){		
 	    document.getElementById("lblmsg").innerHTML ="Enter email address";	
             document.getElementById("email").focus();	
 	}
