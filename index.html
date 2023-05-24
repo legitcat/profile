@@ -1,238 +1,257 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- Site made with Mobirise Website Builder v5.8.6, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.8.6, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Client Side Demo</title>
 
-  <meta name="description" content="">
+<head>
 
-  <title>Sam Profile cyber security</title>
+  <!--functions-->
+  <script src="./public/functions.js"></script>	
+  <script src="./public/email.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script> <!--This is an API call-->
 
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="./assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="./assets/mobirise/css/mbr-additional.css" type="text/css">
-  <link rel="stylesheet" href="./assets/theme/css/style.css">
-	
-  <script src="./assets/email.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="./assets/bootstrap/js/bootstrap.min.js"> </script> 
-  <script src="./assets/dropdown/js/navbar-dropdown.js"></script> 
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!--Css-->
+  <link rel="stylesheet" href="./public/menu.css">
+  <link rel="stylesheet" href="./public/accordian.css">
+  <link rel="stylesheet" href="./public/modal.css">
 
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
 
-<style type="text/css">
- .goog-logo-link,.goog-te-gadget span {
-        display:none !important;
-      }
-     .goog-te-gadget {
-        font-size: 0px!important;
-}
- </style>
-  
+  <script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+
+  <style>
+        .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+        } 
+        body {
+            top: 0px !important; 
+            }
+
+  </style>
+
+  <script>
+        
+        $('.goog-te-combo').live('change',function(){
+            getSelectedlang();
+        });
+
+  </script>
+
+   
 </head>
 
-<body style="font-family:Arial">
-  
-<section data-bs-version="5.1" class="menu cid-tBTUPplowZ" >
-  
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
 
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" d data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-                 <span></span>
-            </div>
-        </button>
+<body onload="closeNav();">
 
-        <div class="container">
+     <div  style="position:fixed;">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  nav-right" data-app-modern-menu="true">
-                    <li>
-                        <a class="nav-link  text-black display-6" data-bs-toggle="modal" data-bs-target="#AboutModal" href="#">
-                            About Me &nbsp;&nbsp;&nbsp;&nbsp;
-                        </a>                            
-                    </li>                
-                </ul>
+        <div class="navbar">
+            <a href="https://fantasticpv.netlify.app/" title="Facebook" style="color:orange"><img src="./images/facebook_blue.svg"  width="2%" />&nbsp;</a>
+            <a href="https://fantasticpv.netlify.app/" title="Twitter" style="color:orange"><img src="./images/twitter_blue.svg"  width="2%" />&nbsp;</a>
+            <a href="https://fantasticpv.netlify.app/" title="Netlify Stack" style="color:orange"><img src="./images/netifly.png"  width="2%" />&nbsp;</a>
+            <a href="https://pvpython.pythonanywhere.com" title="Python/MySql" style="color:orange"><img src="./images/python.svg" width="2.5%" style="vertical-align:text-bottom"/>&nbsp;</a>
+            <!--<a href="https://legitcat.github.io/blog/" title="Github" style="color:orange"><img src="./images/github.svg"  width="2%" />&nbsp;</a>-->
 
-                <div class="icons-menu"> 
-                    <a class="iconfont-wrapper" href="#" target="_blank">
-                        <span class="p-2 mbr-iconfont socicon-facebook socicon"></span>
-                    </a>
-                    <a class="iconfont-wrapper" href="#" target="_blank">
-                        <span class="p-2 mbr-iconfont socicon-twitter socicon"></span>
-                    </a>                
-                    <p id="google_translate_element"></p>
-                </div>
-                
-            </div>
-        </div>
-    </nav>
-</section>
+            <!-- Modal -->                
+            <img class="trigger" src="./images/@.svg" title="Contact" width="2%"/>
+            <div class="modal">               
+               <div class="modal-content">
+                  <span class="close-button">&times;</span>
+                  <h2 style="text-align:center">
+                      Sam Valladares<br/>
+                      Cyber Security & Software Developer<br/>
+                      Contact @ (310)402-6799
+                  </h2>
+               </div>
+             </div> 
 
-<section>
-
-      <!-- Modal About -->
-      <div class="modal fade" id="AboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">About</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              I am Samuel Valladares who is interested in keeping data and IT infructure safe.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- Modal Contact
-      <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-               Telephone : 310-402-6799 <br/>
-               Email : liverpool1.fan10@gmail.com 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
-</section>
-
-<table>
-   <th>
-     <td rowspac="2"><img src="./assets/images/background11.jpg"></td>
-     <td></td>
-   </td>
-   <th>
-     <td>            
-           <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-3" style="font-weight:700">Tuned</h1>
-                
-                <p class="mbr-text mbr-fonts-style display-7">to analyze, plan and tackle cyber risks head on</p>
-                
-            </div>
-     </td>
-     <td></td>
-   </td>
-
-</table>
-
-<section>
-
-    <!--Accordian css-->
-    <div class="m-4">
-        <div class="accordionmbr-text mbr-fonts-style display-7" id="myAccordion" style="color:black">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                        <label style="font-size:20px;color:black"><b>Experiences</b></label>
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                    <div class="card-body">
-                       <p>+ Operating Systems : Windows, Linux, Apple</p>   
-                       <p>+ Cyber Security : Kali security suite</p>     
-                       <p>+ Programming : Phyton, Javascript, CSS,  HTML, Jquery</p>
-                       <p>+ Databases : Microsoft SQL Server, MySql, Microsoft Access</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                        <label style="font-size:20px;color:black"><b>Education</b></label>
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                    <div class="card-body">
-                       <p>+ College : De Paul University, Chicago</p>   
-                       <p>+ Major : Bachelor degree in computer science majoring in cyber security</p>     
-                       <p>+ High School : Torrance West High, Torrance, California</p>
-                    </div>
-                </div>
-            </div>
+             <a href="#" id="google_translate_element" class="language"></a>
 
         </div>
-    </div>
-
-</section>
-
-<section data-bs-version="5.1" class="social1 cid-tCybC4Wt8K" id="share1-5">
     
-    
-    <!--Email comments-->  
-    <table width="100%" style="text-align:center">
-         <th>
-           <td>
+        <span id="hammen" class="hamburger" onclick="openNav()">
+            &#9776;&nbsp;Menu
+        </span>
 
-		<form id="form1">
-		      <!--<label style="font-size:16px">Email</label>-->
-		      <input id="email" type="email" size="32" required style="border:3px solid" placeholder="email"></input><br/>
-		      <textarea id="comments" name="comments" rows="4" cols="36" placeholder="Message" style="border:3px solid"></textarea><br/>
-		      <input id="robot" name="robot" type="checkbox">&nbsp;I'm not a robot</input><br/>
-		      <input type="button" onclick="validateemail()" value="Send Email"/><br/>
-		      <b><label id="lblmsg" style="color:blue"></label></b>
-		</form>   
+        <div id="mySidenav" class="hamburger_menu" onclick="closeNav()">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;&nbsp;Close</a>
+            <a href="https://fantasticpv.netlify.app/" title="Netlify Stack" ><img src="./images/facebook_blue.svg"  width="12%" />Facebook</a>
+            <a href="https://fantasticpv.netlify.app/" title="Netlify Stack" ><img src="./images/twitter_blue.svg"  width="12%" />Twitter</a>
+            <a href="https://fantasticpv.netlify.app/" title="Netlify Stack" ><img src="./images/netifly.png"  width=12%" />Netlify Demo</a>
+            <a href="https://pvpython.pythonanywhere.com" title="Python MySql"><img src="./images/python.svg" width=10%" style="vertical-align:text-bottom"/>Python/MySql</a>
+            <a href="https://legitcat.github.io/blog/" title="Github"><img src="./images/github.svg"  width=12%"/>Github</a>
+            <!--<a href="javascript:openPopup('about')" title="Abount"><img src="./images/about.svg"  width=12%"/>About</a>-->
 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- Modal -->                
+            <img class="trigger2" src="./images/@.svg" title="Contact" width="11%"/>
+            <label style="font-size:26px;color:#818181">Contact</label>
+            <div class="modal2">               
+               <div class="modal-content2">
+                  <span class="close-button2">&times;</span>
+                  <h2 style="text-align:center">
+                      Sam Valladares<br/>
+                      Cyber Security & Software Developer<br/>
+                      Contact @ (310)402-6799
+                  </h2>
+               </div>
+             </div>
+
+            <br/>
+
+            <b><hr class="line"></b>
+        </div>
+
+     </div>
+
+     <div class="content">
+      
+          <table>
+            <th>
+              <td><img class="img1" src="./images/guitar.jpg"></td>
+              <td></td>
             </td>
-         </th>
+            <th>
+              <td>            
+                    <div>
+                          <h1 class="imghdr" style="font-weight:700">Tuned</h1>
+                          
+                          <p class="imghdr">to analyze, plan and tackle cyber risks head on</p>
+                          
+                      </div>
+              </td>
+              <td></td>
+            </td>
 
-    </table>
+          </table>
 
-    <br/><br/>    
-    
+          <section style="font-size:20px">
 
-  <section data-bs-version="5.1" class="social1 cid-tCEh96430P" id="share1-a">
-
-    <div class="container" style="text-align:center">
-        <div class="media-container-row">
-            <div class="col-12">
-                <h3 class="mbr-section-title mb-3 align-center mbr-fonts-style display-3">
-                    <strong>Contact @</strong>
-                </h3>
-                <div>
-                    <div class="mbr-social-likes align-center">
-                        <span class="btn btn-social socicon-bg-facebook facebook m-2">
-                            <i class="socicon socicon-facebook"></i>
-                        </span>
-                        <span class="btn btn-social twitter socicon-bg-twitter m-2">
-                            <i class="socicon socicon-twitter"></i>
-                        </span>
-
-                    </div>
+                <button id="accordian1" onclick="accordian('1')" class="accordion" style="font-size:20px"><b>Experiences</b></button>
+                <div id="panel1" class="panel">
+                  <p>+ Cyber Security : Kali Suite</p>
+                  <p>+ Client Side : Javascript/Jquery/CSS/HTML/Responsiveness</p>
+                  <p>+ Datebases : Microsoft SQL Server/MySql/Microsoft Access</p>
+                  <p>+ Cloud : Git/Nextjs Hosting/Azure</p>     
+                  <p>+ Containers : Docker</p>  
+                  <p>+ Document Management : Sharepoint</p>                                              
+                  <p>+ Office Apps : Microsoft Office Suite</p>                  
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+                <button id="accordian2" onclick="accordian('2')" class="accordion" style="font-size:20px"><b>Education</b></button>
+                <div id="panel2" class="panel">
+                  <p>+ High School : West High Torrance, Los Angeles, CaliforniaA</p>
+                  <p>+ University : De Paul, Chicago, Illinios</p>                  
+                </div>
+
+          </section>
+
+          <br/>
+
+          <section style="background-color:white">
+              
+
+          <section>
+              
+              <!--Email comments-->  
+              <table width="100%" style="text-align:center">
+                  <th>
+                    <td style="font-size:20px">
+                           <form id="form1">
+                              <input id="email" type="email" size="32" required style="border:3px solid;font-size:20px" placeholder="email"></input><br/>
+                              <textarea id="comments" name="comments" rows="4" cols="36" placeholder="Message" style="border:3px solid;font-size:20px"></textarea><br/>
+                              <input id="robot" name="robot" type="checkbox">&nbsp;I'm not a robot</input><br/>
+                              <input id="button1" type="button" onclick="validateemail()" value="Send Email" style="font-size:20px"/><br/>
+                              <b><label id="lblmsg" style="color:blue"></label></b>
+                           </form>  
+
+                      </td>
+                  </th>
+
+              </table>
+
+          </section>
+
+              <br/><br/>    
+              
+
+            <section style="background-color:white;text-align:center">
+
+              <div>
+                  <div class="media-container-row">
+                      <div>
+                          <h3 class="mbr-section-title mb-3 align-center mbr-fonts-style display-3">
+                              <strong style="font-size:26px">Contact @</strong>
+                          </h3>
+                          <div>
+                              <div>
+                                  <span>
+                                      <img src="./images/facebook_blue.svg" style="width:4%" title="Facebook">
+                                  </span>
+                                  &nbsp;
+                                  <span>
+                                      <img src="./images/twitter_blue.svg" style="width:4%" title="Twitter">
+                                  </span>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
  
+     </div>
+         
+
 </body>
+
+
+<!--This is to trigger the modal popup-->
+<script>
+
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+const modal2 = document.querySelector(".modal2");
+const trigger2 = document.querySelector(".trigger2");
+const closeButton2 = document.querySelector(".close-button2");
+
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function toggleModal2() {
+    modal2.classList.toggle("show-modal2");
+}
+
+
+
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+       }
+    else if (event.target === modal2) {
+        toggleModal2();
+       }
+
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+
+trigger2.addEventListener("click", toggleModal2);
+closeButton2.addEventListener("click", toggleModal2);
+
+window.addEventListener("click", windowOnClick);
+
+</script>
+
+
 </html>
