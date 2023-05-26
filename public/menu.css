@@ -1,6 +1,4 @@
-body{
-   font-family:Arial;
-}
+
 
 @media screen and (min-width: 1001px) and (max-width : 8000px) {
 
@@ -24,6 +22,11 @@ body{
 
     .img1{
       width:90%;
+    }
+
+    .contact1,
+    .contact2{
+        width:3%;
     }
 
 }
@@ -97,6 +100,12 @@ body{
       color:brown;
       font-weight:600;
     }
+
+    .contact1,
+    .contact2{
+        width:6%;
+    }
+
 
     @media screen and (max-height: 450px) {
       .hamburger_menu {padding-top: 5px;}
