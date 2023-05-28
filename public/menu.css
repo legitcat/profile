@@ -28,6 +28,14 @@
     .contact2{
         width:3%;
     }
+  
+     .comments{
+         width:36px;
+      }
+  
+     .email{
+       width:32px;
+      }  
 
 }
 
@@ -38,15 +46,23 @@
       {
       visibility:hidden;
       }
-
-
+  
       .img1{
         width:100%;
       }
-
+  
       .line1{
         width:100%;
       }
+  
+     .comments{
+         width:32px;
+      }
+  
+     .email{
+       width:28px;
+      }
+       
 
     .hamburger {
       position:fixed;
