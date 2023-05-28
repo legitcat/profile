@@ -1,6 +1,6 @@
 
 
-@media screen and (min-width: 1001px) and (max-width : 8000px) {
+@media screen and (min-width: 951px) and (max-width : 8000px) {
 
   .hamburger,
   .hamburger_menu{
@@ -40,7 +40,7 @@
 }
 
 
-@media screen and (min-width: 0px) and (max-width : 1000px)  {
+@media screen and (min-width: 0px) and (max-width : 950px)  {
 
     .navbar
       {
