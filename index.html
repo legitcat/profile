@@ -18,14 +18,14 @@
   <link rel="stylesheet" href="./public/modal.css">
 
   <script type="text/javascript">
-     //function googleTranslateElementInit() {
-        //new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+     function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         //new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-      //}    
+      }    
 
   </script>
   
-  <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <style>
     
@@ -84,7 +84,7 @@
                </div>               
              </a> 
               
-             <!--<a href="#" id="google_translate_element" class="language"></a>-->
+             <a href="#" id="google_translate_element" class="language"></a>
 
         </div>
     
@@ -186,14 +186,14 @@
               <!--Email comments-->  
               <table width="100%" style="text-align:center">
                   <th>
-                    <td style="font-size:20px">
+                    <td>
                            <form id="form1">
-                              <input id="email" type="email" required style="border:3px solid;" placeholder="email"></input><br/>
-                              <textarea id="comments" name="comments" rows="4" placeholder="Message" style="border:3px solid;"></textarea><br/>
-                              <input id="robot" name="robot" type="checkbox">&nbsp;I'm not a robot</input><br/>
-                              <input id="button1" type="button" onclick="validateemail()" value="Send Email"/><br/>
-                              <b><label id="lblmsg" style="color:blue"></label></b>
-                           </form>  
+                              <input id="email" class="email" type="email" required style="border:3px solid;" placeholder="email"></input><br/>
+                              <textarea id="comments" class="comments" name="comments" rows="4" placeholder="Message" style="border:3px solid;"></textarea><br/>
+                              <label class="robot"><input id="robot" class="robot" name="robot" type="checkbox">&nbsp;I'm not a robot</input></label><br/>
+                              <label class="button1"><input id="button1" class="button1" type="button" onclick="validateemail()" value="Send Email"/></label><br/>
+                              <b><label id="lblmsg" class="lblmsg" style="color:blue"></label></b>
+                           </form> 
 
                       </td>
                   </th>
