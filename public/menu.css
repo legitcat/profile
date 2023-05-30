@@ -29,18 +29,18 @@
         width:3%;
     }
 
-    .comments{
+    .comments1{
          width:300px;
       }
   
-    .email{
+    .email1{
         width:300px;
       } 
 
     .button1,
     .lblmsg,
-    .comments,
-    .email,
+    .comments1,
+    .email1,
     .robot{
           font-size:18px;
     }
@@ -68,18 +68,18 @@
 
       }
 
-      .comments{
+      .comments1{
          width:240px;
       }
   
-      .email{
+      .email1{
          width:240px;
       }
 
     .button1,
     .lblmsg,
-    .comments,
-    .email,
+    .comments1,
+    .email1,
     .robot{
          font-size:16px;
      }
