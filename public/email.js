@@ -49,6 +49,6 @@ function sendEmail() {
  	           Body : comments,
                }).then(
 		   message => document.getElementById("lblmsg").innerHTML ="Message sent, thank you",
-		   document.getElementById("button1").disabled= true
+		   document.getElementById("button").disabled= true
                );
 	}
