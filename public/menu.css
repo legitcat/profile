@@ -22,7 +22,15 @@
           
     .google2{
             visibility: hidden;
-      }    
+      }
+
+    .facebook{
+             width:3%;
+      }
+
+     .email{
+         width:3%;
+      } 
 
     .imghdr{  
         font-size:35px;
@@ -71,10 +79,18 @@
             visibility: hidden;
           } 
           
-          .google2{
+     .google2{
             visibility: visible;
       }  
 
+    .facebook{
+             width:10%;
+      }
+
+     .email{
+         width:10%;
+      }
+  
       .img1{
         width:100%;
       }
