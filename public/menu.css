@@ -24,6 +24,12 @@
             visibility: hidden;
       }
 
+    .gmap{
+      height:250
+      width:20%;
+      border-width:0;"
+    }
+
     .facebook{
         width:3%;
       }
@@ -82,6 +88,12 @@
      .google2{
             visibility: visible;
       }  
+
+      .gmap{
+      height:250
+      width:40%;
+      border-width:0;"
+    }
 
     .facebook{
          width:10%;
