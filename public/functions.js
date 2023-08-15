@@ -45,7 +45,7 @@ function animate(){
              //alert(image[value]);
              img='./images/' + image[value];
              $('#img1').attr('src', img);
-             $('.hide').show(1000);
+             $('.hide').show(800);
              value++;
            }
           else{
