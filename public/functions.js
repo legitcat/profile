@@ -32,4 +32,27 @@ function modal_popup() {
 
 }
 
+
+function animate(){
+
+     var image = [ 'cat1.png', 'cat2.png', 'cat3.png','cat4.png','cat5.png'];
+
+     value=0;
+     img='';
+
+     const t=setInterval(function() {  
+          if (value <5){  
+             //alert(image[value]);
+             img='./images/' + image[value];
+             $('#img1').attr('src', img);
+             $('.hide').show(1000);
+             value++;
+           }
+          else{
+               clearInterval(t);
+            }
+        }, 1000);
+
+ }
+
     
