@@ -11,7 +11,7 @@ function closeNav() {
 
 function accordian(id){ 
 
-      for (let i = 1; i < 4; i++) {
+      for (let i = 1; i < 5; i++) {
              if (id==i && document.getElementById("panel"+i).style.display==""){
                    document.getElementById("accordian"+i).style.backgroundColor = "orange"; 
                    document.getElementById("panel"+i).style.display="block"; 
