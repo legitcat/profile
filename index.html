@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Legitcat Github</title>
+  <title>Client Side Demo</title>
 
 <head>
 
@@ -78,9 +78,21 @@
                   </div>
                </div>               
              </a> 
-             <a href="mailto:liverpool1.fan10@gmail.com?subject=Hi There!&body=Greetings!" alt="email" title="Email" style="vertical-align:bottom">
-                  <img src="./images/email.svg" style="width:2%" title="Email">
-             </a>
+
+            <a href="#" title="Email" >
+               <img class="trigger2" src="./images/email.svg" width="2%"/>
+               <div class="modal2">               
+                  <div class="modal-content2">
+                     <span class="close-button2">&times;</span>
+                     <form action="mailto:paulvalladares@gmail.com" method="post" enctype="text/plain">
+                         Comments: <textarea id="txt_comments" rows="4"  name="txt_comments" cols="50" style="vertical-align:top"></textarea>
+                         <br/>
+                         <input type="submit" name="submit" value="Submit">
+                     </form>
+                  </div>
+               </div>               
+             </a> 
+
              <a href="#" id="google_translate_element" class="google1" title="Translate" ></a>
 
      </div>
@@ -97,10 +109,10 @@
             <!--<a href="javascript:openPopup('about')" title="About"><img src="./images/about.svg"  width=12%"/>&nbsp;About</a>-->
 
             <a href="#" title="About" >
-               <img class="trigger2" src="./images/about.svg" width="12%"/>&nbsp;About
-               <div class="modal2" >               
-                  <div class="modal-content2">
-                     <span class="close-button2">&times;</span>
+               <img class="trigger3" src="./images/about.svg" width="12%"/>&nbsp;About
+               <div class="modal3" >               
+                  <div class="modal-content3">
+                     <span class="close-button3">&times;</span>
                      <label style="text-align:center;font-size:16px">
                          &nbsp;Sam Valladares<br/>
                          &nbsp;Cyber Security & Software Developer<br/>
@@ -111,9 +123,19 @@
                </div>                
              </a> 
           
-             <a href="mailto:liverpool1.fan10@gmail.com?subject=Hi There!&body=Greetings!" alt="email" title="Email" style="vertical-align:bottom">
-                  <img src="./images/email.svg" style="width:10%" title="Email">&nbsp;Email
-             </a>       
+            <a href="#" title="Email" >
+               <img class="trigger4" src="./images/email.svg" width="12%"/>
+               <div class="modal4">               
+                  <div class="modal-content4">
+                     <span class="close-button4">&times;</span>
+                     <form action="mailto:paulvalladares@gmail.com" method="post" enctype="text/plain">
+                         Comments: <textarea id="txt_comments" rows="4"  name="txt_comments" cols="50" style="vertical-align:top"></textarea>
+                         <br/>
+                         <input type="submit" name="submit" value="Submit">
+                     </form>
+                  </div>
+               </div>               
+             </a>      
 
             <br/>
             <b><hr class="line"></b>
@@ -199,12 +221,20 @@
                                       <a href="https://www.facebook.com/login/" title="Facebook" alt="facebook"><img src="./images/facebook_blue.svg" class="facebook" title="Facebook"></a>
                                   </span>
                                   &nbsp;
-                                  <span>
-                                    
-                                       <a href="mailto:liverpool1.fan10@gmail.com?subject=Hi There!&body=Greetings!" alt="email" title="Email">
-                                           <img src="./images/email.svg" class="email" title="Email">
-                                       </a>
-                                    
+                                  <span>                                    
+                                     <a href="#" title="Email" >
+                                        <img class="trigger5 email" src="./images/email.svg" title="email"/>
+                                        <div class="modal5">               
+                                           <div class="modal-content5">
+                                              <span class="close-button5">&times;</span>
+                                              <form action="mailto:paulvalladares@gmail.com" method="post" enctype="text/plain">
+                                                  Comments: <textarea id="txt_comments" rows="4"  name="txt_comments" cols="50" style="vertical-align:top"></textarea>
+                                                  <br/>
+                                                  <input type="submit" name="submit" value="Submit">
+                                              </form>
+                                           </div>
+                                        </div>               
+                                      </a>                                     
                                   </span>
                               </div>
                           </div>
@@ -230,6 +260,18 @@ const modal2 = document.querySelector(".modal2");
 const trigger2 = document.querySelector(".trigger2");
 const closeButton2 = document.querySelector(".close-button2");
 
+const modal3 = document.querySelector(".modal3");
+const trigger3 = document.querySelector(".trigger3");
+const closeButton3 = document.querySelector(".close-button3");
+
+const modal4 = document.querySelector(".modal4");
+const trigger4 = document.querySelector(".trigger4");
+const closeButton4 = document.querySelector(".close-button4");
+
+const modal5 = document.querySelector(".modal5");
+const trigger5 = document.querySelector(".trigger5");
+const closeButton5 = document.querySelector(".close-button5");
+
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
@@ -239,21 +281,56 @@ function toggleModal2() {
     modal2.classList.toggle("show-modal2");
 }
 
+function toggleModal3() {
+    modal3.classList.toggle("show-modal3");
+}
+
+function toggleModal4() {
+    modal4.classList.toggle("show-modal4");
+}
+
+
+function toggleModal5() {
+    modal5.classList.toggle("show-modal5");
+}
+
+
+
 function windowOnClick(event) {
+
     if (event.target === modal) {
         toggleModal();
        }
     else if (event.target === modal2) {
         toggleModal2();
        }
+    else if (event.target === modal3) {
+        toggleModal3();
+       }
+    else if (event.target === modal4) {
+        toggleModal4();
+       }
+    else if (event.target === modal5) {
+        toggleModal5();
+       }
 
 }
+
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 
 trigger2.addEventListener("click", toggleModal2);
 closeButton2.addEventListener("click", toggleModal2);
+
+trigger3.addEventListener("click", toggleModal3);
+closeButton3.addEventListener("click", toggleModal3);
+
+trigger4.addEventListener("click", toggleModal4);
+closeButton4.addEventListener("click", toggleModal4);
+
+trigger5.addEventListener("click", toggleModal5);
+closeButton5.addEventListener("click", toggleModal5);
 
 window.addEventListener("click", windowOnClick);
 
