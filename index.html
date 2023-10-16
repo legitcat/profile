@@ -249,7 +249,7 @@
 </body>
 
 
-<!--This is to trigger the modal popup-->
+<!--The script section triggers the modal/popup-->
 <script>
 
 const modal = document.querySelector(".modal");
@@ -294,8 +294,6 @@ function toggleModal5() {
     modal5.classList.toggle("show-modal5");
 }
 
-
-
 function windowOnClick(event) {
 
     if (event.target === modal) {
@@ -315,7 +313,6 @@ function windowOnClick(event) {
        }
 
 }
-
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
