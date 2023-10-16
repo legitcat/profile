@@ -1,7 +1,8 @@
 .modal,
 .modal2,
 .modal3,
-.modal4 {
+.modal4,
+.modal5 {
     position: fixed;
     left: 0;
     top: 0;
@@ -17,7 +18,8 @@
 .modal-content,
 .modal-content2,
 .modal-content3,
-.modal-content4 {
+.modal-content4,
+.modal-content5 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,7 +33,8 @@
 .close-button,
 .close-button2,
 .close-button3,
-.close-button4 {
+.close-button4,
+.close-button5{
     float: right;
     width: 1.5rem;
     line-height: 1.5rem;
@@ -44,14 +47,16 @@
 .close-button:hover,
 .close-button2:hover,
 .close-button3:hover,
-.close-button4:hover{
+.close-button4:hover,
+.close-button5:hover{
     background-color: darkgray;
 }
 
 .show-modal,
 .show-modal2,
 .show-modal3,
-.show-modal4
+.show-modal4,
+.show-modal5
  {
     opacity: 1;
     visibility: visible;
