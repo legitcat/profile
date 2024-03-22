@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./public/menu.css">
   <link rel="stylesheet" href="./public/accordian.css">
   <link rel="stylesheet" href="./public/modal.css">
+  <link rel="stylesheet" href="./public/slideshow.css">
 
   <script type="text/javascript">
      function googleTranslateElementInit() {
@@ -22,6 +23,28 @@
       } 
 
   </script>
+
+
+  <script>
+
+     import "./public/slideshow.cs";
+     let index = 0;
+    displayImages();
+    function displayImages() {
+      let i;
+      const images = document.getElementsByClassName("image");
+      for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+      }
+      index++;
+      if (index > images.length) {
+        index = 1;
+      }
+      images[index-1].style.display = "block";
+      setTimeout(displayImages, 2000); 
+    }
+
+  </script>  
   
   <style>
     
@@ -47,9 +70,12 @@
         
        /*#google_translate_element a {
           display: none;
-        }*/
-    
-  </style>  
+        }*/   
+ 
+       /*Audo slide show*/
+
+      </style> 
+ 
    
 </head>
 
@@ -147,11 +173,29 @@
      <table>
        
             <th>
-              <td class="block1"><img class="img1" src="./images/guitar.jpg"></td>
+               <td class="block1">
+                 <!--<img class="img1" src="./images/guitar.jpg">-->
 
-               <td class="block1" style="text-align:center">            
+              <div class="image-slideshow">
+          
+                <div class="image fade">
+                <img src="./images/kali1.png" alt="Mountain Top">
+                </div>
+                  
+                <div class="image fade">
+                <img src="./images/kali2.png" alt="Palm Trees">
+                </div>
+                  
+                <div class="image fade">
+                <img src="./images/kali3.png" alt="Neon Sign">
+                </div>
+              </div>
+                 
+               </td>
+
+               <td class="block1" style="text-align:center">                    
                     <h1 class="imghdr" style="font-weight:800;font-family:Arial;font-size:50px;">Tuned To Techology</h1>
-                    <br/>
+                    <br/>                 
                </td>             
              </th>
 
