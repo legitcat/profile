@@ -1,87 +1,3 @@
-
-
-@media screen and (min-width: 901px) and (max-width : 8000px) {
-
-  .hamburger,
-  .hamburger_menu{
-      position:fixed;
-      visibility:hidden;
-      height:0;
-      z-index:1;
-    }
-
-  .img1{
-    position:relative;
-    z-index:0;
-  }
-
-  .navbar{
-    background-color:orange;
-    /*text-align:right
-    */
-    visibility:visible;
-    float:right;
-    top:0;
-    } 
-
-    .google1{
-            visibility: visible;
-          } 
-          
-    .google2{
-            visibility: hidden;
-      }
-
-    .gmap{
-      height:250
-      width:20%;
-      border-width:0;"
-    }
-
-    .facebook{
-        width:3%;
-      }
-
-     .email{
-         width:3%;
-      } 
-
-    .imghdr{  
-        font-size:35px;
-      }
-
-    .img1{
-      width:90%;
-    }
-
-    .contact1,
-    .contact2{
-        width:3%;
-    }
-
-    .comments1{
-         width:300px;
-      }
-  
-    .email1{
-        width:300px;
-      } 
-
-    .button1,
-    .lblmsg1,
-    .comments1,
-    .email1,
-    .robot1{
-          font-size:18px;
-    }
-
-    input[type=checkbox] {
-       zoom:1.3;
-     }
-
-}
-
-
 @media screen and (min-width: 0px) and (max-width : 900px)  {
 
     .navbar
@@ -117,6 +33,8 @@
   
       .img1{
         width:100%;
+        position:relative;
+        z-index:0;
       }
 
       .line1{
@@ -208,6 +126,83 @@
       .hamburger_menu {padding-top: 5px;}
       .hamburger_menu a {font-size: 18px;}
     }
+
+}
+
+@media screen and (min-width: 901px) and (max-width : 8000px) {
+
+  .hamburger,
+  .hamburger_menu{
+      position:fixed;
+      visibility:hidden;
+      height:0;
+      z-index:1;
+  }
+
+  .navbar{
+    background-color:orange;
+    /*text-align:right
+    */
+    visibility:visible;
+    top:0;
+    } 
+
+    .google1{
+            visibility: visible;
+          } 
+          
+    .google2{
+            visibility: hidden;
+      }
+
+    .gmap{
+      height:250
+      width:20%;
+      border-width:0;"
+    }
+
+    .facebook{
+        width:3%;
+      }
+
+     .email{
+         width:3%;
+      } 
+
+    .imghdr{  
+        font-size:35px;
+      }
+
+    .img1{
+      position:relative;
+      width:100%;
+      z-index:-1;
+    }
+
+    .contact1,
+    .contact2{
+        width:3%;
+    }
+
+    .comments1{
+         width:300px;
+      }
+  
+    .email1{
+        width:300px;
+      } 
+
+    .button1,
+    .lblmsg1,
+    .comments1,
+    .email1,
+    .robot1{
+          font-size:18px;
+    }
+
+    input[type=checkbox] {
+       zoom:1.3;
+     }
 
 }
 
