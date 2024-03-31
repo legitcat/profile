@@ -4,6 +4,7 @@
 
   .hamburger,
   .hamburger_menu{
+      position:fixed;
       visibility:hidden;
       height:0;
       z-index:0;
