@@ -8,6 +8,7 @@
       visibility:hidden;
       height:0;
       z-index:1;
+      right:0;
     }
 
   .img1{
@@ -17,9 +18,11 @@
 
   .navbar{
     background-color:orange;
-    text-align:right;
-    visibility:visible;
+    /*text-align:right;
     position: fixed;
+    */
+    visibility:visible;
+    right:0;
     top:0;
     } 
 
