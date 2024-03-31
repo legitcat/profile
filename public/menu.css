@@ -6,6 +6,7 @@
   .hamburger_menu{
       visibility:hidden;
       height:0;
+      z-index:0;
     }
 
   .navbar{
