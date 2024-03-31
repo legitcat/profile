@@ -4,7 +4,7 @@
 
   .hamburger,
   .hamburger_menu{
-      position:relative;
+      position:fixed;
       visibility:hidden;
       height:0;
       z-index:1;
@@ -18,12 +18,13 @@
 
   .navbar{
     background-color:orange;
-    /*text-align:right;
-    position: fixed;
+    /*text-align:right
     */
     visibility:visible;
     float:right;
     top:0;
+    right:0;
+    position: fixed;
     } 
 
     .google1{
