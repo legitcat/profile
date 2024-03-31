@@ -22,7 +22,7 @@
     position: fixed;
     */
     visibility:visible;
-    right:0;
+    float:right;
     top:0;
     } 
 
