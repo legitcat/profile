@@ -63,8 +63,9 @@
      }
 
     .hamburger {
-      position:fixed;
+      position:relative;
       top:0px;
+      z-index:1;
       font-size:25px;
       font-weight:600;
       font-family:Arial;
@@ -72,16 +73,13 @@
       color:black;
       background:orange;
       text-align:left;
-      position: fixed;
-      right:0;
       width:100%;
-      z-index:1;
     }
 
     .hamburger_menu {
       height: 100%;
       width: 0;
-      position: fixed;
+      position:relative;
       z-index: 1;
       top: 0;
       left:0;
@@ -93,6 +91,8 @@
     }
 
     .hamburger_menu a {
+      position:relative;
+      z-index: 2;
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
