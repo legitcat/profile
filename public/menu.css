@@ -84,7 +84,8 @@
     }
 
     .th_img,
-    .th_hdr{
+    .th_hdr,
+    .lbl_hdr{
         width:100%;
     }
 
