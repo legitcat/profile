@@ -66,6 +66,7 @@
 
     .hamburger_menu .closebtn {
       position: absolute;
+      z-index:0;
       top: 0;
       font-size: 25px;
       font-family:Arial;
