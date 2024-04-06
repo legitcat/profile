@@ -34,7 +34,8 @@
       .img1{
         width:100%;
         position:relative;
-        z-index:-1;
+        z-index:0;
+        left:50%;
       }
 
       .line1{
@@ -63,7 +64,7 @@
      }
 
     .hamburger {
-      position:relative;
+      position:fixed;
       top:0px;
       z-index:1;
       font-size:25px;
@@ -72,17 +73,16 @@
       cursor:pointer;
       color:black;
       background:orange;
-      text-align:left;
+      /*text-align:left;*/
       width:100%;
     }
 
     .hamburger_menu {
       height: 100%;
       width: 0;
-      position:relative;
-      z-index: 2;
+      position: fixed;
+      z-index: 1;
       top: 0;
-      left:0;
       background-color: #D3D3D3;
       overflow-x: hidden;
       transition: 0.5s;
@@ -91,8 +91,6 @@
     }
 
     .hamburger_menu a {
-      position:relative;
-      z-index: 3;
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 25px;
@@ -122,28 +120,22 @@
     }
 
 
-    @media screen and (max-height: 450px) {
-      .hamburger_menu {padding-top: 5px;}
-      .hamburger_menu a {font-size: 18px;}
-    }
-
 }
+
 
 @media screen and (min-width: 901px) and (max-width : 8000px) {
 
   .hamburger,
   .hamburger_menu{
-      position:fixed;
       visibility:hidden;
       height:0;
-      z-index:1;
-  }
+    }
 
   .navbar{
     background-color:orange;
-    /*text-align:right
-    */
+    text-align:right;
     visibility:visible;
+    position: fixed;
     top:0;
     } 
 
@@ -173,11 +165,9 @@
         font-size:35px;
       }
 
-    .img1{
-      position:relative;
-      width:100%;
-      z-index:-1;
-    }
+    /*.img1{
+      width:90%;
+    }*/
 
     .contact1,
     .contact2{
@@ -205,4 +195,7 @@
      }
 
 }
+
+
+
 
