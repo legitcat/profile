@@ -24,9 +24,7 @@
     }
 
 .hamburger {
-      position:fixed;
       top:0px;
-      z-index:1;
       font-size:25px;
       font-weight:600;
       font-family:Arial;
@@ -40,8 +38,6 @@
     .hamburger_menu {
       height: 100%;
       width: 0;
-      position: fixed;
-      z-index: 1;
       top: 0;
       background-color: #D3D3D3;
       overflow-x: hidden;
@@ -75,7 +71,7 @@
     }  
 
     .img1{
-        width:50%;
+        width:100%;
     }
 
     .facebook{
@@ -152,7 +148,7 @@
     }
 
     .img1{
-        width:50%;
+        width:100%;
     }
 
     .facebook{
