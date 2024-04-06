@@ -33,9 +33,6 @@
   
       .img1{
         width:100%;
-        position:relative;
-        z-index:0;
-        left:50%;
       }
 
       .line1{
@@ -165,9 +162,9 @@
         font-size:35px;
       }
 
-    /*.img1{
-      width:90%;
-    }*/
+    .img1{
+      width:100%;
+    }
 
     .contact1,
     .contact2{
