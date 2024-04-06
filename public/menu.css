@@ -24,7 +24,7 @@
     }
 
 .hamburger {
-      position:absolute;
+      position:fixed;
       z-index:1;
       top:0px;
       font-size:25px;
@@ -38,7 +38,7 @@
     }
 
     .hamburger_menu {
-      position:absolute;
+      position:fixed;
       z-index:1;
       height: 100%;
       width: 0;
@@ -81,6 +81,11 @@
 
     .imghdr{
        width:100%;
+    }
+
+    .th_img,
+    .th_hdr{
+        width:100%;
     }
 
     .facebook{
@@ -156,12 +161,14 @@
       border-width:0;"
     }
 
-    .img1{
+    .img1,
+    .imghdr{
         width:100%;
     }
 
-    .imghdr{
-       width:100%;
+    .th_img,
+    .th_hdr{
+        width:50%;
     }
 
     .facebook{
