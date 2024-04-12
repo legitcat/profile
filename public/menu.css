@@ -12,7 +12,6 @@
         z-index:3;
         visibility: visible;
         /*margin-left:20%;*/
-        float:right;
           }
 
    .gmap{
@@ -160,7 +159,6 @@
        color: transparent;
        vertical-align:text-bottom;
        /*float:right;*/
-       float:left;
     }
           
 
