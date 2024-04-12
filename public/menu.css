@@ -11,8 +11,8 @@
         position:fixed;
         z-index:3;
         visibility: visible;
-        /*margin-left:20%;*/
-        top:0;
+        margin-left:20%;
+        top:-5%;
           }
 
    .gmap{
