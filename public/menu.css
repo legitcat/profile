@@ -8,7 +8,7 @@
       }
 
     .google1{
-        position:absolute;
+        position:fixed;
         z-index:3;
         visibility: visible;
         /*margin-left:20%;*/
