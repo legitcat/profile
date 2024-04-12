@@ -12,6 +12,7 @@
         z-index:3;
         visibility: visible;
         /*margin-left:20%;*/
+        top:0;
           }
 
    .gmap{
@@ -153,6 +154,7 @@
         visibility: visible;
         /*margin-right:0%;*/
         top:0;
+        float:left;
           }
 
     #google_translate_element {
