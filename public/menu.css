@@ -7,13 +7,15 @@
       visibility:hidden;
       }
 
-    .google1{
-            visibility: hidden;
-          } 
+    google1{
+        position:relative;
+        z-index:3;
+        visibility: visible;
+          }
           
-     .google2{
+     /*.google2{
             visibility: visible;
-      }  
+      } */
 
       .gmap{
       height:250
