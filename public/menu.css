@@ -158,8 +158,8 @@
     #google_translate_element {
        color: transparent;
        vertical-align:text-bottom;
-       /*float:right;
-       margin-right:0;*/
+       /*float:right;*/
+       float:left;
     }
           
 
