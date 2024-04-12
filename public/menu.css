@@ -149,6 +149,8 @@
     } 
 
     .google1{
+        position:absolute;
+        z-index:3;
         visibility: visible;
           }
 
