@@ -152,6 +152,7 @@
         position:absolute;
         z-index:3;
         visibility: visible;
+        margin-left:0%;
           }
 
     #google_translate_element {
