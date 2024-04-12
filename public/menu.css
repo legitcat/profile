@@ -155,8 +155,8 @@
     #google_translate_element {
        color: transparent;
        vertical-align:text-bottom;
-       /*float:right;*/
-       margin-right:50%;
+       /*float:right;
+       margin-right:0;*/
     }
           
 
