@@ -7,22 +7,20 @@
       visibility:hidden;
       }
 
-    /*.google1{
+    .google1{
         position:fixed;
         z-index:3;
         visibility: visible;
         margin-left:25%;
-        top:0;
-     } */
+        vertical-align:top;
+     }
 
-    div#google_translate_element {
-       position:fixed;
-       z-index:3;
+    /*div#google_translate_element {
        color: transparent;
        vertical-align:top;
        margin-left:30%;
        /*float:right;*/
-    }
+    }*/
 
    .gmap{
       height:250
@@ -157,19 +155,19 @@
     top:0;
     } 
 
-    /*.google1{
+    .google1{
         position:fixed;
         z-index:3;
         visibility: visible;
         /*margin-right:0%;*/
-        top:0;
+        vertical-align:top;
         float:left;
-          }*/
+          }
 
-    div#google_translate_element {
+    /*div#google_translate_element {
        color: transparent;
        vertical-align:top;
-    }
+    }*/
           
 
     .gmap{
