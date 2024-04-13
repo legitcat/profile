@@ -15,12 +15,11 @@
         vertical-align:top;
      }
 
-    /*div#google_translate_element {
+    div#google_translate_element {
        color: transparent;
        vertical-align:top;
        margin-left:30%;
-       /*float:right;*/
-    }*/
+    }
 
    .gmap{
       height:250
@@ -159,15 +158,13 @@
         position:fixed;
         z-index:3;
         visibility: visible;
-        /*margin-right:0%;*/
-        vertical-align:top;
         float:left;
           }
 
-    /*div#google_translate_element {
+    div#google_translate_element {
        color: transparent;
        vertical-align:top;
-    }*/
+    }
           
 
     .gmap{
