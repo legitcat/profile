@@ -12,13 +12,11 @@
         z-index:3;
         visibility: visible;
         margin-left:25%;
-          }
+     }
 
     div#google_translate_element {
        color: transparent;
        vertical-align:top;
-       background:orange;
-        top:0px;
        /*float:right;*/
     }
 
