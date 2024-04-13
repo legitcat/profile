@@ -14,6 +14,12 @@
         margin-left:25%;
           }
 
+    div#google_translate_element {
+       color: transparent;
+       vertical-align:top;
+       /*float:right;*/
+    }
+
    .gmap{
       height:250
       width:40%;
@@ -156,10 +162,9 @@
         float:left;
           }
 
-    #google_translate_element {
+    div#google_translate_element {
        color: transparent;
-       vertical-align:text-bottom;
-       /*float:right;*/
+       vertical-align:top;
     }
           
 
