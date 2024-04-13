@@ -12,7 +12,8 @@
         z-index:3;
         visibility: visible;
         margin-left:25%;
-     }
+        top:0;
+     } 
 
     div#google_translate_element {
        color: transparent;
