@@ -24,12 +24,12 @@
       width:40%;
       border-width:0;"
     }
-
+    
      .block1{
       display:inline-block;
     }
 
-  .hamburger {
+ .hamburger {
       position:fixed;
       z-index:1;
       top:0px;
@@ -146,7 +146,7 @@
 
   .navbar{
     background-color:orange;
-    text-align:right;
+    text-align:left;
     visibility:visible;
     position: fixed;
     top:0;
