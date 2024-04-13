@@ -12,14 +12,12 @@
         z-index:3;
         visibility: visible;
         margin-left:25%;
-        vertical-align:top;
      }
 
     div#google_translate_element {
        color: transparent;
        vertical-align:top;
-       margin-left:30%;
-    }
+     }
 
    .gmap{
       height:250
