@@ -7,17 +7,20 @@
       visibility:hidden;
       }
 
-    .google1{
+    /*.google1{
         position:fixed;
         z-index:3;
         visibility: visible;
         margin-left:25%;
         top:0;
-     } 
+     } */
 
     div#google_translate_element {
+       position:fixed;
+       z-index:3;
        color: transparent;
        vertical-align:top;
+       margin-left:30%;
        /*float:right;*/
     }
 
@@ -154,14 +157,14 @@
     top:0;
     } 
 
-    .google1{
+    /*.google1{
         position:fixed;
         z-index:3;
         visibility: visible;
         /*margin-right:0%;*/
         top:0;
         float:left;
-          }
+          }*/
 
     div#google_translate_element {
        color: transparent;
