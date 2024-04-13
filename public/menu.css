@@ -156,12 +156,12 @@
         position:fixed;
         z-index:3;
         visibility: visible;
-        float:right;
           }
 
     div#google_translate_element {
        color: transparent;
        vertical-align:top;
+        text-align: right;
     }
           
 
