@@ -1,0 +1,24 @@
+<html>
+
+  <header>
+    <script>
+        function writetofile(){
+            const fs = require('fs')
+ 
+            // Data which will write in a file.
+            let data = "Learning how to write in a file."
+             
+            // Write data in 'Output.txt' .
+            fs.writeFile('./test.txt', data, (err) => {
+             
+                // In case of a error throw err.
+                if (err) throw err;
+            })
+        }
+    </script>
+  </header>
+
+  <button onclick="writetofile()" >Write to file</button>
+
+  
+</html>
