@@ -1,12 +1,15 @@
   <html>
 
   <header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <script>
         function writetofile(){
             const fs = require('fs')
  
             // Data which will write in a file.
-            let data = "Learning how to write in a file."
+            let data = "The quick brown fox jumped over the lazy dogs."
              
             // Write data in 'Output.txt' .
             fs.writeFile('./test.txt', data, (err) => {
