@@ -12,7 +12,7 @@
             let data = "The quick brown fox jumped over the lazy dogs."
              
             // Write data in 'Output.txt' .
-            fs.writeFile('./test.txt', data, (err) => {
+            fs.appendFile('./test.txt', data, (err) => {
              
                 // In case of a error throw err.
                 if (err) throw err;
