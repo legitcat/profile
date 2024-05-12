@@ -9,7 +9,7 @@
 
     .google1{
         position:fixed;
-        z-index:2;
+        z-index:3;
         visibility: visible;
         margin-left:25%;
      }
